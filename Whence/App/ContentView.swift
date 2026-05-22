@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Droppy
+//  Whence
 //
 
 import SwiftUI
@@ -47,7 +47,7 @@ struct ContentView: View {
             }
         }
         .frame(minWidth: 400, minHeight: 300)
-        .navigationTitle("Droppy")
+        .navigationTitle("Whence")
         .overlay {
             if store.root.isEmpty {
                 VStack {

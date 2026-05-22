@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1C9F7C392FADA7360073394F"
-               BuildableName = "Droppy.app"
-               BlueprintName = "Droppy"
-               ReferencedContainer = "container:Droppy.xcodeproj">
+               BuildableName = "Whence.app"
+               BlueprintName = "Whence"
+               ReferencedContainer = "container:Whence.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1C9F7C392FADA7360073394F"
-            BuildableName = "Droppy.app"
-            BlueprintName = "Droppy"
-            ReferencedContainer = "container:Droppy.xcodeproj">
+            BuildableName = "Whence.app"
+            BlueprintName = "Whence"
+            ReferencedContainer = "container:Whence.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1C9F7C392FADA7360073394F"
-            BuildableName = "Droppy.app"
-            BlueprintName = "Droppy"
-            ReferencedContainer = "container:Droppy.xcodeproj">
+            BuildableName = "Whence.app"
+            BlueprintName = "Whence"
+            ReferencedContainer = "container:Whence.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

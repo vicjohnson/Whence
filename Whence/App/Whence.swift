@@ -1,6 +1,6 @@
 //
-//  DroppyApp.swift
-//  Droppy
+//  Whence.swift
+//  Whence
 //
 
 import SwiftUI
@@ -8,7 +8,7 @@ import KeyboardShortcuts
 import Sparkle
 
 @main
-struct DroppyApp: App {
+struct Whence: App {
     private let updaterController = SPUStandardUpdaterController(
         startingUpdater: true,
         updaterDelegate: nil,

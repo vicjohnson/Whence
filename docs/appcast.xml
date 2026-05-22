@@ -1,64 +1,14 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>Droppy</title>
+        <title>Whence</title>
         <item>
-            <title>0.0.8</title>
-            <pubDate>Fri, 15 May 2026 13:53:39 -0400</pubDate>
-            <sparkle:version>0.0.8</sparkle:version>
-            <sparkle:shortVersionString>0.0.8</sparkle:shortVersionString>
+            <title>1.0.0</title>
+            <pubDate>Fri, 22 May 2026 02:26:47 -0400</pubDate>
+            <sparkle:version>1.0.0</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.8/Droppy-v0.0.8.zip" length="2521987" type="application/octet-stream" sparkle:edSignature="Jtys3eIpHFcFc0TSTta/iKblN4EEyi/E5VEeoEBIDXRYtANH6NlMZvJqcTBvxCcG8LG2EQKXE1TeBoKbPPzABA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.8/Droppy0.0.8-0.0.7.delta" sparkle:deltaFrom="0.0.7" length="64606" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="M/jtEqLAwB5xcyXGfdOFykTa0Q/JTv46koEPWVC20kmhDbfV5IfEryzgFV0T/nHnUAg0Na64w+iI5pcVx9mKBg=="/>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.8/Droppy0.0.8-0.0.6.delta" sparkle:deltaFrom="0.0.6" length="69718" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Dr2/h6+vCqsHt43+TROueDrtZnsoynzp7baOlGGlE2bjECRT3C/Q6fNuf7IxhuzhSabK//9iV2VWH7oHrdPHBw=="/>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.8/Droppy0.0.8-0.0.5.delta" sparkle:deltaFrom="0.0.5" length="75650" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="qzcJgKj1M8pd/jE97bhi9wQShfg4hV+BEktnM1rjWjTO4fw1EnhTMCgHNCMP+TEExRtbQt+djfVM9zfwsdkHBQ=="/>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.8/Droppy0.0.8-0.0.4.delta" sparkle:deltaFrom="0.0.4" length="75690" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="H/yJD20cxshrjkswRIK8ERafNTrG3B8V1LXOIbdt1Q23Ct48q6/fm/fiBcTUHk6hzB8hoteboMcWJGYQEJegDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.0.7</title>
-            <pubDate>Fri, 15 May 2026 13:34:49 -0400</pubDate>
-            <sparkle:version>0.0.7</sparkle:version>
-            <sparkle:shortVersionString>0.0.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.7/Droppy-v0.0.7.zip" length="2516800" type="application/octet-stream" sparkle:edSignature="u+/NfwcH2yqaaGlxcCbEIUfzwHnoM54QvGzRBMaYh8uhye+mOGTSCxC64rAjavEyMbTBgBn3o7dA+4SZk4RDCA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.7/Droppy0.0.7-0.0.6.delta" sparkle:deltaFrom="0.0.6" length="45274" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="iJgrFPUuaCIqBmuOySnolCVUe27Ry9seC9qrXrXaROZVbFbCHffBU8UgfWuXavb3lqJ11mc+IbctOqiTGj76DQ=="/>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.7/Droppy0.0.7-0.0.5.delta" sparkle:deltaFrom="0.0.5" length="56046" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4ahdvelPgaOjJhjHNjzDDjzTYdmnUTwyx/RrUE3trmMnny/R3fZCtfjYqU1WGT4+GPp67kqt25tkdlzuny+oDg=="/>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.7/Droppy0.0.7-0.0.4.delta" sparkle:deltaFrom="0.0.4" length="55970" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Uyxl8abWrcOg58t+eWCOG1GQb+wcdvyq2VmpkaQ4nrDWWBxZa1SvoN+fwG1Pafxuq45EH4R+ndKxFhsN+3agDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.0.6</title>
-            <pubDate>Fri, 15 May 2026 05:08:06 -0400</pubDate>
-            <sparkle:version>0.0.6</sparkle:version>
-            <sparkle:shortVersionString>0.0.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.6/Droppy-v0.0.6.zip" length="2518622" type="application/octet-stream" sparkle:edSignature="cG1sczNiPAfoCf63AF6o/oQ6KwNsFO9Cy8azJIqQNcGGR5DigG0Z1nE6lXIC8NiR1fACEVwYDVOIlPv9+rMsAA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.6/Droppy0.0.6-0.0.5.delta" sparkle:deltaFrom="0.0.5" length="46914" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="u30z8HKtOmRuuxgOaYBnagTAhyHgCXPMzq45f7FP0USklpxIfUrj/S52jQ6xEJ57dbBEhpeHKGZEkMsnHMMXAQ=="/>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.6/Droppy0.0.6-0.0.4.delta" sparkle:deltaFrom="0.0.4" length="46390" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lgfacza1BVVKgiz13IPN0rlUqUJKtwHGh+NmfAilpn434yxc9+2ESCLczr3GNhVqG09qgxOIDFhrJAajQ3HHBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.0.5</title>
-            <pubDate>Fri, 15 May 2026 03:47:50 -0400</pubDate>
-            <sparkle:version>0.0.5</sparkle:version>
-            <sparkle:shortVersionString>0.0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.5/Droppy-v0.0.5.zip" length="2518131" type="application/octet-stream" sparkle:edSignature="b098YzTEx7GCpXqas77aiqCZ3Yi4L4EsmMwPUsf68+Gen3rYU1d8sAwwTXPb5f8XBLbzPEwXgXgmTUtn0lofBA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.5/Droppy0.0.5-0.0.4.delta" sparkle:deltaFrom="0.0.4" length="12090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="nf83zvnndA7sZVH6mPaTwdp1sPwIhkBYjdD3C9ufwX/2SjeHmuPyD67QK6hVHdoc+jT+FFn1/bGQdJPKyCtjCg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.0.4</title>
-            <pubDate>Fri, 15 May 2026 02:49:56 -0400</pubDate>
-            <sparkle:version>0.0.4</sparkle:version>
-            <sparkle:shortVersionString>0.0.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/vicjohnson/Droppy/releases/download/v0.0.4/Droppy-v0.0.4.zip" length="2523014" type="application/octet-stream" sparkle:edSignature="o59vtSJgd+cFrOsZo7T1VQ5yVe0HeHzmdBvmMchkUUWkktShCpJLMhWDb48oNrtTl03F4W2ecngJVUXU6KohCA=="/>
+            <enclosure url="https://github.com/vicjohnson/Whence/releases/download/v1.0.0/Whence-v1.0.0.zip" length="2532581" type="application/octet-stream" sparkle:edSignature="pPAFHutMjMj+oLD62cTbgLf1JJ7CeGOMPBRLI1xiae2KTOKXhIueWIHn5DmXFSnZkHxx81Z7YfEM3Etcm4hFAA=="/>
         </item>
     </channel>
 </rss>

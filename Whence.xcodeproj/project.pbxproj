@@ -12,26 +12,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C9F7C3A2FADA7360073394F /* Droppy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droppy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9F7C3A2FADA7360073394F /* Whence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1C91158F2FB6EA3C006DCAB4 /* Exceptions for "Droppy" folder in "Droppy" target */ = {
+		1C91158F2FB6EA3C006DCAB4 /* Exceptions for "Whence" folder in "Whence" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 1C9F7C392FADA7360073394F /* Droppy */;
+			target = 1C9F7C392FADA7360073394F /* Whence */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1C9F7C3C2FADA7360073394F /* Droppy */ = {
+		1C9F7C3C2FADA7360073394F /* Whence */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1C91158F2FB6EA3C006DCAB4 /* Exceptions for "Droppy" folder in "Droppy" target */,
+				1C91158F2FB6EA3C006DCAB4 /* Exceptions for "Whence" folder in "Whence" target */,
 			);
-			path = Droppy;
+			path = Whence;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,7 +52,7 @@
 		1C9F7C312FADA7360073394F = {
 			isa = PBXGroup;
 			children = (
-				1C9F7C3C2FADA7360073394F /* Droppy */,
+				1C9F7C3C2FADA7360073394F /* Whence */,
 				1C9F7C3B2FADA7360073394F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		1C9F7C3B2FADA7360073394F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C9F7C3A2FADA7360073394F /* Droppy.app */,
+				1C9F7C3A2FADA7360073394F /* Whence.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1C9F7C392FADA7360073394F /* Droppy */ = {
+		1C9F7C392FADA7360073394F /* Whence */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C9F7C452FADA7380073394F /* Build configuration list for PBXNativeTarget "Droppy" */;
+			buildConfigurationList = 1C9F7C452FADA7380073394F /* Build configuration list for PBXNativeTarget "Whence" */;
 			buildPhases = (
 				1C9F7C362FADA7360073394F /* Sources */,
 				1C9F7C372FADA7360073394F /* Frameworks */,
@@ -81,15 +81,15 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1C9F7C3C2FADA7360073394F /* Droppy */,
+				1C9F7C3C2FADA7360073394F /* Whence */,
 			);
-			name = Droppy;
+			name = Whence;
 			packageProductDependencies = (
 				1C9F7C492FADA8670073394F /* KeyboardShortcuts */,
 				1C91158C2FB6E837006DCAB4 /* Sparkle */,
 			);
-			productName = Droppy;
-			productReference = 1C9F7C3A2FADA7360073394F /* Droppy.app */;
+			productName = Whence;
+			productReference = 1C9F7C3A2FADA7360073394F /* Whence.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1C9F7C352FADA7360073394F /* Build configuration list for PBXProject "Droppy" */;
+			buildConfigurationList = 1C9F7C352FADA7360073394F /* Build configuration list for PBXProject "Whence" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C9F7C392FADA7360073394F /* Droppy */,
+				1C9F7C392FADA7360073394F /* Whence */,
 			);
 		};
 /* End PBXProject section */
@@ -185,7 +185,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.8;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = T434G799A6;
@@ -208,7 +208,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 0.0.8;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -253,7 +253,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 0.0.8;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = T434G799A6;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 0.0.8;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -282,7 +282,7 @@
 		1C9F7C462FADA7380073394F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Droppy;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Whence;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,7 +294,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Droppy/Info.plist;
+				INFOPLIST_FILE = Whence/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,7 +303,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15;
 				MARKETING_VERSION = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vicjohnson.Droppy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vicjohnson.Whence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -318,7 +318,7 @@
 		1C9F7C472FADA7380073394F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Droppy;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Whence;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,7 +330,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Droppy/Info.plist;
+				INFOPLIST_FILE = Whence/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,7 +339,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15;
 				MARKETING_VERSION = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vicjohnson.Droppy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vicjohnson.Whence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C9F7C352FADA7360073394F /* Build configuration list for PBXProject "Droppy" */ = {
+		1C9F7C352FADA7360073394F /* Build configuration list for PBXProject "Whence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C9F7C432FADA7380073394F /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C9F7C452FADA7380073394F /* Build configuration list for PBXNativeTarget "Droppy" */ = {
+		1C9F7C452FADA7380073394F /* Build configuration list for PBXNativeTarget "Whence" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C9F7C462FADA7380073394F /* Debug */,

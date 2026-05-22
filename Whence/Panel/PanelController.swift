@@ -1,6 +1,6 @@
 //
 //  PanelController.swift
-//  Droppy
+//  Whence
 //
 
 import AppKit
@@ -20,7 +20,7 @@ final class PanelController {
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
             statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-            statusItem?.button?.image = NSImage(systemSymbolName: "list.clipboard", accessibilityDescription: "Droppy")
+            statusItem?.button?.image = NSImage(systemSymbolName: "list.clipboard", accessibilityDescription: "Whence")
             statusItem?.button?.action = #selector(statusItemClicked)
             statusItem?.button?.target = self
         }

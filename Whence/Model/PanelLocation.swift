@@ -1,6 +1,6 @@
 //
 //  PanelLocation.swift
-//  Droppy
+//  Whence
 //
 //  Created by Victor Johnson on 5/14/26.
 //

@@ -9,20 +9,20 @@ if [ -z "$VERSION" ]; then
     exit 1
 fi
 
-REPO="vicjohnson/Droppy"
+REPO="vicjohnson/Whence"
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
 VERSION_DIR="$ROOT_DIR/versions/$VERSION"
 SPARKLE_DIR="$ROOT_DIR/versions/sparkle"
 DOCS_DIR="$ROOT_DIR/docs"
-ZIP_NAME="Droppy-$VERSION.zip"
+ZIP_NAME="Whence-$VERSION.zip"
 
-if [ ! -d "$VERSION_DIR/Droppy.app" ]; then
-    echo "Error: $VERSION_DIR/Droppy.app not found"
+if [ ! -d "$VERSION_DIR/Whence.app" ]; then
+    echo "Error: $VERSION_DIR/Whence.app not found"
     exit 1
 fi
 
-echo "Zipping Droppy.app..."
-ditto -c -k --sequesterRsrc --keepParent "$VERSION_DIR/Droppy.app" "$VERSION_DIR/$ZIP_NAME"
+echo "Zipping Whence.app..."
+ditto -c -k --sequesterRsrc --keepParent "$VERSION_DIR/Whence.app" "$VERSION_DIR/$ZIP_NAME"
 
 echo "Copying zip to sparkle directory..."
 cp "$VERSION_DIR/$ZIP_NAME" "$SPARKLE_DIR/$ZIP_NAME"
@@ -31,8 +31,8 @@ echo "Generating appcast..."
 generate_appcast --download-url-prefix "https://github.com/$REPO/releases/download/" "$SPARKLE_DIR"
 
 echo "Fixing download URLs..."
-sed -i '' 's|download/Droppy-\([^"]*\)\.zip|download/\1/Droppy-\1.zip|g' "$SPARKLE_DIR/appcast.xml"
-sed -i '' 's|download/Droppy\([0-9.]*\)-\([0-9.]*\)\.delta|download/v\1/Droppy\1-\2.delta|g' "$SPARKLE_DIR/appcast.xml"
+sed -i '' 's|download/Whence-\([^"]*\)\.zip|download/\1/Whence-\1.zip|g' "$SPARKLE_DIR/appcast.xml"
+sed -i '' 's|download/Whence\([0-9.]*\)-\([0-9.]*\)\.delta|download/v\1/Whence\1-\2.delta|g' "$SPARKLE_DIR/appcast.xml"
 
 echo "Copying appcast to docs..."
 cp "$SPARKLE_DIR/appcast.xml" "$DOCS_DIR/appcast.xml"

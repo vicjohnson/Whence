@@ -1,6 +1,6 @@
 //
 //  Settings.swift
-//  Droppy
+//  Whence
 //
 //  Created by Victor Johnson on 5/14/26.
 //
@@ -61,7 +61,7 @@ class SettingsStore {
 
     // MARK: - Storage Location
     
-    private static let defaultStorageLocation = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!.appendingPathComponent("Droppy")
+    private static let defaultStorageLocation = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!.appendingPathComponent(Constants.appName)
     var storageLocation: URL = SettingsStore.defaultStorageLocation {
         didSet {
             userDefaults.set(storageLocation, forKey: Setting.storageLocation)

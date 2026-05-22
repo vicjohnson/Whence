@@ -1,6 +1,6 @@
 //
 //  PasteNode.swift
-//  Droppy
+//  Whence
 //
 
 import Foundation

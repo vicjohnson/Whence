@@ -1,6 +1,6 @@
 //
 //  SettingsPage.swift
-//  Droppy
+//  Whence
 //
 
 import KeyboardShortcuts
@@ -20,7 +20,7 @@ struct SettingsPage: View {
 
         Form {
             Section {
-                KeyboardShortcuts.Recorder("Open Droppy", name: .openPanel)
+                KeyboardShortcuts.Recorder("Open Whence", name: .openPanel)
             }
             
             Section {
@@ -94,7 +94,7 @@ struct SettingsPage: View {
             }
             
             Section {
-                LabeledContent("Droppy v\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")") {
+                LabeledContent("Whence v\(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")") {
                     Button("Check for Updates") {
                         checkForUpdates()
                     }

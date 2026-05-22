@@ -1,6 +1,6 @@
 //
 //  PanelView.swift
-//  Droppy
+//  Whence
 
 import SwiftUI
 
