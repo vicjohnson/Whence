@@ -20,8 +20,8 @@ struct DroppyApp: App {
     @State private var panelController: PanelController
 
     init() {
-        let store = NodeStore()
         let settings = SettingsStore()
+        let store = NodeStore(settings: settings)
         let controller = PanelController(store: store, settings: settings)
         
         _settings = State(initialValue: settings)
@@ -31,6 +31,10 @@ struct DroppyApp: App {
         KeyboardShortcuts.onKeyUp(for: .openPanel) { [controller] in
             controller.show()
         }
+        
+        #if DEBUG
+        settings.debug()
+        #endif
     }
 
     var body: some Scene {
@@ -40,15 +44,18 @@ struct DroppyApp: App {
         }
         .defaultPosition(.topTrailing)
         .defaultSize(width: 400, height: 1400)
+        .onChange(of: settings.storageLocation) {
+            store.load()
+        }
 
         Settings {
             SettingsPage(panelController: panelController, checkForUpdates: {
                 updaterController.checkForUpdates(nil)
             })
-                .environment(store)
-                .environment(settings)
+            .environment(store)
+            .environment(settings)
         }
-        .defaultSize(width: 400, height: 500)
+        .defaultSize(width: 600, height: 500)
         .windowResizability(.contentSize)
         .commands {
             CommandGroup(after: .appInfo) {

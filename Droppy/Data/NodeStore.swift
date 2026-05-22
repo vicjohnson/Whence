@@ -7,16 +7,16 @@ import Foundation
 
 @Observable
 final class NodeStore {
+    let settings: SettingsStore
     var root: [Node] = []
+    
+    private var fileUrl: URL {
+        settings.storageLocation.appendingPathComponent(Constants.settingsFileName)
+    }
 
-    private let fileURL: URL = {
-        let dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-            .appendingPathComponent("Droppy")
-        try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
-        return dir.appendingPathComponent("nodes.json")
-    }()
-
-    init(preview: Bool = false) {
+    init(settings: SettingsStore, preview: Bool = false) {
+        self.settings = settings
+        
         if preview {
             loadSampleData()
         } else {
@@ -78,14 +78,14 @@ final class NodeStore {
     private func save() {
         do {
             let data = try JSONEncoder().encode(root)
-            try data.write(to: fileURL, options: .atomic)
+            try data.write(to: fileUrl, options: .atomic)
         } catch {
             print("Failed to save nodes: \(error)")
         }
     }
 
-    private func load() {
-        guard let data = try? Data(contentsOf: fileURL) else { return }
+    func load() {
+        guard let data = try? Data(contentsOf: fileUrl) else { return }
         if let decoded = try? JSONDecoder().decode([Node].self, from: data) {
             root = decoded
         }

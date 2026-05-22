@@ -74,13 +74,13 @@ struct ContentView: View {
 }
 
 #Preview("ContentView") {
-    let store = NodeStore()
+    let store = NodeStore(settings: SettingsStore())
     return ContentView()
         .environment(store)
 }
 
 #Preview("Empty") {
-    let store = NodeStore(preview: true)
+    let store = NodeStore(settings: SettingsStore(), preview: true)
     store.root = []
     
     return ContentView()

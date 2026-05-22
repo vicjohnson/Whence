@@ -91,6 +91,6 @@ struct PanelView: View {
 }
 
 #Preview {
-    let store = NodeStore(preview: true)
+    let store = NodeStore(settings: SettingsStore(), preview: true)
     return PanelView(store: store, dismiss: {}, paste: { _ in })
 }

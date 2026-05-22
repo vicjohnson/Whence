@@ -5,12 +5,15 @@
 
 import KeyboardShortcuts
 import SwiftUI
+internal import UniformTypeIdentifiers
 
 struct SettingsPage: View {
     let panelController: PanelController
     let checkForUpdates: () -> Void
 
     @Environment(SettingsStore.self) private var settings
+    
+    @State private var isSelectingDataLocation: Bool = false
 
     var body: some View {
         @Bindable var settings = settings
@@ -18,6 +21,15 @@ struct SettingsPage: View {
         Form {
             Section {
                 KeyboardShortcuts.Recorder("Open Droppy", name: .openPanel)
+            }
+            
+            Section {
+                LabeledContent("Data Location") {
+                    Button("\(settings.storageLocation.path(percentEncoded: false))") {
+                        isSelectingDataLocation = true
+                    }
+                    .buttonStyle(.plain)
+                }
             }
             
             Section {
@@ -101,6 +113,21 @@ struct SettingsPage: View {
         .onDisappear {
             panelController.hidePreview()
         }
+        .fileImporter(
+            isPresented: $isSelectingDataLocation,
+            allowedContentTypes: [.directory],
+            allowsMultipleSelection: false
+        ) { result in
+            switch result {
+            case .success(let urls):
+                if let url = urls.first {
+                    settings.storageLocation = url
+                }
+            case .failure(let error):
+                // Handle the error
+                print("Error selecting file: \(error.localizedDescription)")
+            }
+        }
     }
 
     private func updatePreview(settings: SettingsStore) {
@@ -118,6 +145,8 @@ struct SettingsPage: View {
 }
 
 #Preview {
-    SettingsPage(panelController: PanelController(store: NodeStore(), settings: SettingsStore()), checkForUpdates: {})
-        .environment(SettingsStore())
+    let settings = SettingsStore()
+    SettingsPage(panelController: PanelController(store: NodeStore(settings: settings), settings: settings), checkForUpdates: {})
+        .environment(settings)
+        .frame(width: 600, height: 500)
 }
