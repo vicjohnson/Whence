@@ -5,6 +5,7 @@
 //  Created by Victor Johnson on 5/10/26.
 //
 
+import AppKit
 import SwiftUI
 
 struct NodeRow: View {
@@ -19,10 +20,19 @@ struct NodeRow: View {
             Text(node.name)
             Spacer()
             if let value = node.value {
-                Text(value)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(1)
+                Button(value) {
+                    NSPasteboard.general.clearContents()
+                    NSPasteboard.general.setString(value, forType: .string)
+                    Toaster.shared.addToast("Copied!")
+                }
+                .buttonStyle(.borderless)
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
             }
         }
     }
+}
+
+#Preview {
+    NodeRow(node: Node(key: "k", name: "Example", content: .snippet(value: "some example content")))
 }

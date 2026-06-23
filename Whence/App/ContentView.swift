@@ -7,6 +7,8 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(NodeStore.self) private var store
+    private var toaster = Toaster.shared
+    
     @State private var selectedID: UUID?
     @State private var formMode: EditNodeView.Mode?
 
@@ -34,6 +36,18 @@ struct ContentView: View {
                     }
                 }
         }
+        .overlay(alignment: .top) {
+            VStack() {
+                ForEach(toaster.toasts) { toast in
+                    Toast(toast: toast)
+                        .transition(.asymmetric(
+                            insertion: .move(edge: .top),
+                            removal: .move(edge: .top)
+                        ))
+                }
+            }
+        }
+        
         .toolbar {
             Button(action: {
                 formMode = .add(parentID: selectedFolder?.id)
