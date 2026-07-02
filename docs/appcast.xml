@@ -3,6 +3,17 @@
     <channel>
         <title>Whence</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Thu, 02 Jul 2026 02:27:14 -0400</pubDate>
+            <sparkle:version>1.1.0</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/vicjohnson/Whence/releases/download/v1.1.0/Whence-v1.1.0.zip" length="3042787" type="application/octet-stream" sparkle:edSignature="qW7HORPt8eGQRsBgXwi7nqX4Vbc3z8AKjh+qc0SJ9md6k+6o2PV4MThELict5s+MMX8ZI69pQJTPF7Vf0XGmAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/vicjohnson/Whence/releases/download/v1.1.0/Whence1.1.0-1.0.0.delta" sparkle:deltaFrom="1.0.0" length="1184978" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="mvA2+z2TFw1lDlwC+BLnJFjgHkbm/rnlnPq/yGWFd5LzbnkVMgVvelTEyQwcqeU40n1XhmRIIz9T6KuGJGdOBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Fri, 22 May 2026 02:26:47 -0400</pubDate>
             <sparkle:version>1.0.0</sparkle:version>
