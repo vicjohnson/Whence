@@ -58,6 +58,7 @@ struct Whence: App {
         .defaultSize(width: 600, height: 500)
         .windowResizability(.contentSize)
         .commands {
+            AddNodeCommands()
             CommandGroup(after: .appInfo) {
                 Button("Check for Updates") {
                     updaterController.checkForUpdates(nil)

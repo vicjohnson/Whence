@@ -68,6 +68,10 @@ final class NodeStore {
         find(id, in: root)
     }
 
+    func parentID(of id: UUID) -> UUID? {
+        findParentID(of: id, in: root, parentID: nil)
+    }
+
     func isDuplicateKey(_ key: String, in parentID: UUID?, excludingID: UUID? = nil) -> Bool {
         let siblings = parentID.flatMap { find($0, in: root)?.children } ?? root
         return siblings.contains { $0.key == key && $0.id != excludingID }
@@ -138,6 +142,15 @@ final class NodeStore {
             }
             return n
         }
+    }
+
+    private func findParentID(of id: UUID, in nodes: [Node], parentID: UUID?) -> UUID? {
+        for node in nodes {
+            if node.id == id { return parentID }
+            if let children = node.children,
+               let found = findParentID(of: id, in: children, parentID: node.id) { return found }
+        }
+        return nil
     }
 
     private func find(_ id: UUID, in nodes: [Node]) -> Node? {

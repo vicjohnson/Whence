@@ -12,9 +12,9 @@ struct ContentView: View {
     @State private var selectedID: UUID?
     @State private var formMode: EditNodeView.Mode?
 
-    private var selectedFolder: Node? {
-        guard let id = selectedID, let node = store.node(id: id), node.isFolder else { return nil }
-        return node
+    private var addTargetParentID: UUID? {
+        guard let id = selectedID, let node = store.node(id: id) else { return nil }
+        return node.isFolder ? node.id : store.parentID(of: id)
     }
 
     var body: some View {
@@ -24,9 +24,9 @@ struct ContentView: View {
                 .contextMenu {
                     if node.isFolder {
                         Button("Add to \(node.name)") {
-                            formMode = .add(parentID: node.id)
-                        }
-                        Divider()
+                        formMode = .add(parentID: node.id)
+                    }
+                    Divider()
                     }
                     Button("Edit") {
                         formMode = .edit(node: node)
@@ -47,10 +47,9 @@ struct ContentView: View {
                 }
             }
         }
-        
         .toolbar {
             Button(action: {
-                formMode = .add(parentID: selectedFolder?.id)
+                formMode = .add(parentID: addTargetParentID)
             }) {
                 Label("Add", systemImage: "plus")
             }
@@ -60,8 +59,28 @@ struct ContentView: View {
                 formMode = nil
             }
         }
+        .onKeyPress(.return) {
+            guard let id = selectedID, let node = store.node(id: id) else { return .ignored }
+            formMode = .edit(node: node)
+            return .handled
+        }
+        .onDeleteCommand {
+            guard let id = selectedID else { return }
+            store.delete(id)
+            selectedID = nil
+        }
+        .onCopyCommand {
+            guard let id = selectedID,
+                  let value = store.node(id: id)?.value else {
+                return []
+            }
+            
+            Toaster.shared.addToast("Copied!")
+            return [NSItemProvider(object: value as NSString)]
+        }
         .frame(minWidth: 400, minHeight: 300)
         .navigationTitle("Whence")
+        .focusedValue(\.addNodeAction, { formMode = .add(parentID: addTargetParentID) })
         .overlay {
             if store.root.isEmpty {
                 VStack {
