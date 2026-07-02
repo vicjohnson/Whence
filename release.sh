@@ -76,7 +76,7 @@ RELEASE_FILES=("$VERSION_DIR/$ZIP_NAME")
 for delta in "$VERSION_DIR"/*.delta; do
     [ -f "$delta" ] && RELEASE_FILES+=("$delta")
 done
-GITHUB_TOKEN=$WHENCE_RELEASE_TOKEN gh release create "$VERSION" "${RELEASE_FILES[@]}" --title "Whence $VERSION"
+GH_TOKEN=$WHENCE_RELEASE_TOKEN gh release create "$VERSION" "${RELEASE_FILES[@]}" --title "Whence $VERSION"
 
 echo ""
 echo "Done. $VERSION is live."
