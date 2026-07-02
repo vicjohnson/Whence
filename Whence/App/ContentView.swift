@@ -24,9 +24,9 @@ struct ContentView: View {
                 .contextMenu {
                     if node.isFolder {
                         Button("Add to \(node.name)") {
-                        formMode = .add(parentID: node.id)
-                    }
-                    Divider()
+                            formMode = .add(parentID: node.id)
+                        }
+                        Divider()
                     }
                     Button("Edit") {
                         formMode = .edit(node: node)

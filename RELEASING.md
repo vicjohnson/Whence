@@ -6,7 +6,7 @@
 
 ## Steps
 
-1. Bump the version in Xcode
+1. Bump the version in Xcode and commit the change
 2. Archive, notarize, and export `Whence.app` to `versions/vX.X.X/`
 3. Run the release script:
    ```bash

@@ -20,14 +20,18 @@ struct NodeRow: View {
             Text(node.name)
             Spacer()
             if let value = node.value {
-                Button(value) {
+                Text(value)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+                Button {
                     NSPasteboard.general.clearContents()
                     NSPasteboard.general.setString(value, forType: .string)
                     Toaster.shared.addToast("Copied!")
+                } label: {
+                    Image(systemName: "doc.on.doc")
                 }
                 .buttonStyle(.borderless)
                 .foregroundStyle(.secondary)
-                .lineLimit(1)
             }
         }
     }
